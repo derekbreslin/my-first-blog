@@ -22,6 +22,9 @@ class Entryggg(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
 
 
+    def __str__(self):
+        return self.player
+
     def publish(self):
         self.save()
-
+        

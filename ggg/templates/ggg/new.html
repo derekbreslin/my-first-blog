@@ -23,9 +23,9 @@
                 <div class="col">
                     <p> Testing, testing part 2</p>
                     <h2>Goals Goals Goals</h2>
-                    <form method="POST" class="post-form">{% csrf_token %}
-                        {{ form.as_p }}
-                        <button type="submit" class="save btn btn-secondary">Save</button>
+                    <form method="POST" action="/gggtournament/new/" class="post-form">{% csrf_token %}
+                        {{ form.as_table }}
+                        <input type = "submit" value ="Submit">
                     </form>
                 </div>
             </div>
